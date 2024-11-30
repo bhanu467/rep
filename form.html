@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #85FFBD;
+            background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+            min-height: 100vh;
+            margin:0%
+
+        }
+        .navbar{
+            background-color:lightgreen ;
+            padding: 15px;
+            text-align: center;
+        }
+        .navbar a{
+            text-decoration: none;
+            font-size: 2rem;
+            color: black;
+            padding: 15px;
+        }
+        .navbar a:hover{
+            background-color: darkseagreen;
+            color: black;
+        }
+        .form-parent{
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 5%;
+        }
+        .form-container{
+            background-color: white;
+            width: 25%;
+            padding: 2%;
+            text-align: center;
+            border-radius: 10px;
+        }
+        .form-container input,.form-container select{
+            padding: 15px;
+            width: 83%;
+        }
+        .form-container select{
+            width: 91%;
+        }
+        .form-container button{
+            background-color:greenyellow;
+            color: black;
+            padding: 15px;
+            width: 30%;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Login</a>
+        <a href="">Register</a>
+    </nav>
+    <div class="form-parent">
+    <form class="form-container" action="https://www.google.com">
+        <h2>Register</h2>
+    <p>
+        <input required placeholder="Enter your name" type="text"/>
+    </p>
+    <p>
+        <input required placeholder="Enter emailId" type="email"/>
+    </p>
+    <p>
+
+        <select name="Branch">
+            <option value="">Select your branch</option>
+            <option value="CSE">CSE</option>
+            <option value="IT">IT</option>
+            <option value="MCA">MCA</option>
+        </select>
+    </p>
+    <p>
+        <input required placeholder="password" type="password" name="password">
+    </p>
+    <p>
+        <button>Register</button>
+    </p>
+    </form>
+    <img width="25%" src="pic.png" alt=""/>
+    </div>
+</body>
+</html>
